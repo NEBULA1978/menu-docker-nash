@@ -14,6 +14,11 @@ while :; do
     echo "7. Iniciamos ubuntu con docker con docker run ubuntu:"
     echo "8. Estamos en ubuntu con docker:"
     echo "9. Iniciamos bash desde ubuntu con docker con:"
+    echo "10. Vemos los contenedores que se estan ejecuantdo:"
+    echo "11. Con control d salimos de dentro de ubuntu en bash:"
+    echo "12. Vemos los contenedores que se han ejecutado:"
+    echo "13. Borar contenedor por id:"
+    echo "14. Iniciar y parar contenedor por id:"
     echo "4. Salir"
     echo ""
     #Escoger menu
@@ -62,6 +67,32 @@ while :; do
     9)
         echo "Estamos en bash con docker en ubuntu"
         echo "docker run -it ubuntu bash"
+        read foo
+        ;;
+    10)
+        echo "Vemos los contenedores que se estan ejecuantdo:"
+        echo "docker ps"
+        read foo
+        ;;
+    11)
+        echo "Con control d salimos de dentro de ubuntu en bash:"
+        echo "control + d"
+        read foo
+        ;;
+    12)
+        echo "Vemos los contenedores que se han ejecutado:"
+        echo "docker ps -a"
+        read foo
+        ;;
+    13)
+        echo "Borar contenedor por id o nombre:"
+        echo "docker rm mºID | nombre"
+        read foo
+        ;;
+    14)
+        echo "Iniciar contenedor por id o nombre:"
+        echo "docker start mºID | nombre"
+        echo "docker stop mºID | nombre"
         read foo
         ;;
     4) exit 0 ;;
